@@ -58,6 +58,16 @@ h1 {
     border-radius: 5px;
 }
 
+.codeLink {
+    position: absolute;
+    top: 0%;
+    left: 15%;
+}
+
+#resumeLink {
+    text-align: center;
+}
+
 h2 {
     width: 920px;
     color: #57a6a8;
