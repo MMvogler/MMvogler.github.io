@@ -68,11 +68,9 @@ h1 {
 }
 
 .codeLink {
-    position: absolute;
     width: 100%;
     height: auto;
-    /* top: 0%;
-    left: 15%; */
+    padding-left: 80px;
 }
 
 #resumeLink {
@@ -122,6 +120,7 @@ h3 {
 
 }
 
+/* Responsive Content */
 @media screen and (max-width:980px) {
     .container {
         padding-left: 40px;
@@ -132,7 +131,7 @@ h3 {
     }
 
     .projectImg {
-        padding-left: 120px;
+        padding-left: 200px;
     }
 
    
@@ -151,4 +150,80 @@ h3 {
         left: 0%;
     } */
 
+}
+
+@media screen and (max-width:768px) {
+      
+    .main-section {
+      margin-bottom: 20px;
+    }
+    .subtitle {
+        margin-top: 0px;
+    }
+
+    .subtitle-underline {
+        margin-top: 0px;
+        padding-top: 0px;
+        width: 85%;
+
+    }
+    #resumeLink {
+        padding-left: 100px;
+    }  
+
+    .main-container {
+        float: left;
+        width: 85%;
+        /* max-width: 650px;
+        padding: 30px;
+        margin: 0 0 40px; */
+    }
+
+    .profilePic {
+        margin-left: 120px;
+        margin-bottom: 20px;
+    }
+
+    .projectImg {
+        margin-left: 100px;
+        padding: 30px;
+    }
+
+    .container .btn {
+        top: 100%;
+        left: 25%;
+
+    }
+
+    .codeLink {
+        display: none;
+    }
+
+  
+  }
+
+  @media screen and (max-width:640px) {
+    
+    .subtitle {
+        padding-left: 150px;
+    }
+
+    .name {
+        padding-left: 180px;
+    }
+   
+    /* #logo {
+      width: 100%;
+      max-width: 450px;
+    }
+
+    nav {
+      padding-right: 180px;
+      
+    }
+
+    .main-section {
+    
+      max-width: 450px;
+    } */
 }
