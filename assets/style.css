@@ -33,8 +33,17 @@ h1 {
     
 }
 
+.main-container {
+    float: left;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    margin: 0 0 40px;
+}
+
 .projectImg {
-    position: relative;
+    /* position: relative; */
+    float: left;
     width: 50%;
 }
 
@@ -60,8 +69,10 @@ h1 {
 
 .codeLink {
     position: absolute;
-    top: 0%;
-    left: 15%;
+    width: 100%;
+    height: auto;
+    /* top: 0%;
+    left: 15%; */
 }
 
 #resumeLink {
@@ -71,9 +82,15 @@ h1 {
 h2 {
     width: 920px;
     color: #57a6a8;
-    border-bottom-color: #d3af37;
-    border-bottom-style: solid;
-    border-bottom-width: medium;
+    
+}
+
+.subtitle-underline {
+    width: 100%;
+    border-top-color: #d3af37;
+    border-top-style: solid;
+    border-top-width: medium;
+   
 }
 
 
@@ -102,5 +119,36 @@ h3 {
     color: #ffffff;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 12px;
+
+}
+
+@media screen and (max-width:980px) {
+    .container {
+        padding-left: 40px;
+      }
+    
+    h2 {
+        width: 920px;
+    }
+
+    .projectImg {
+        padding-left: 120px;
+    }
+
+   
+    #resumeLink {
+        padding-left: 200px;
+    }
+
+    .container .btn {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+    }
+    /* .codeLink {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    } */
 
 }
