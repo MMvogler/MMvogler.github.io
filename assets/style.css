@@ -52,6 +52,7 @@ h1 {
 .appDescription {
     color: grey!important;
     font-size: 10px!important;
+    text-align: center;
 }
 
 .container .img {
