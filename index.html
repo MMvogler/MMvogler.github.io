@@ -1,79 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <link rel="stylesheet" href="assets/style.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <title>About Me</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.8.x-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <script async type="text/javascript" src="../js/bulma.js"></script>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="completeHeader">
-    <h1 class="navbar-brand name"> Megan Vogler </h1>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <ul class="navbar-nav">
-        <li>
-          <a class="nav-item nav-link active" href="index.html">About | </a>
-        </li>
-        <li>
-          <a class="nav-item nav-link" href="portfolio.html">Portfolio | </a>
-        </li>
-        <li>
-          <a class="nav-item nav-link" href="contact.html">Contact </a>
-        </li>
-      </ul>
+  <!-- Navigation bar -->
+  <nav class="navbar is-link is-fixed-top is-success">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#about">
+          <span class="icon">
+            <i class="fas fa-info"></i>
+          </span>
+          <span>About</span>
+        </a>
+        <a class="navbar-item" href="#resume">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Resume</span>
+        </a>
+        <a class="navbar-item" href="#portfolio">
+          <span class="icon">
+            <i class="fas fa-th-list"></i>
+          </span>
+          <span>Portfolio</span>
+        </a>
+        <!-- <a class="navbar-item" href="#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Contact</span>
+        </a> -->
+      </div>
     </div>
   </nav>
- 
-    <div class="container">
-      <section class="main-container">
 
-        <div class="row subtitle">
-          <div class="col-md-4">
-            <h2>About Me</h2>
-          </div>
-          <div class="row subtitle-underline">
-            <div class="col-md-12">
+  <!-- Header -->
+  <section class="hero is-link is-fullheight is-fullheight-with-navbar is-success">
+    <div class="hero-body">
+      <div class="container">Hello! I am
+        <h1 class="title is-1">
+          Megan Vogler
+        </h1>
+        <h2 class="subtitle is-3">
+          Full Stack Web Developer
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <!-- Title -->
+    <div class="section-heading">
+      <h3 class="title is-2">About Me</h3>
+      <div class="container">
+        <p>
+            I recently moved to the Mount Juliet, Tennessee area with my family. I’ve dedicated most 
+            of my career to educating communities through higher education opportunities. A former 
+            Business Development Representative, I’m looking to move into Full Stack Developing, 
+            where I can utilize my knowledge of business and education to serve organizations 
+            in a brand-new way.
+        </p>
+      </div>
+    </div> </br>
+
+    <div class="columns has-same-height is-gapless">
+      <div class="column">
+        <!-- Profile -->
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-4">Profile</h3>
+
+            <div class="content">
+              <table class="table-profile">
+                <tr>
+                  <th colspan="1"></th>
+                  <th colspan="2"></th>
+                </tr>
+                <tr>
+                  <td>Phone:</td>
+                  <td>970.903.9035</td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td>mmphilmon@gmail.com</td>
+                </tr>
+              </table>
+            </div>
+            <br>
+            <div class="buttons has-addons is-centered">
+              <a href="https://github.com/MMvogler" class="button is-link is-success">Github</a>
+              <a href="https://www.linkedin.com/in/megan-vogler/" class="button is-link is-success">LinkedIn</a>
             </div>
           </div>
         </div>
-        
-        <div class="row">
-          <div class="col-md-3 profilePic">
-            <img src="assets/images/megan.png" alt="placeholder" height="200" width="130">
-          </div>
-
-          <div class="col-md-9" id="aboutMeText">
-            <p> I recently moved to the Mount Juliet, Tennessee area with my family. I’ve dedicated most of my career to educating communities through higher education opportunities. A former Business Development Representative, I’m looking to move into Full Stack Developing, where I can utilize my knowledge of business and education to serve organizations in a brand-new way. 
-              <br> 
-              I am a passionate web developer with experience working with CSS, jQuery, ReactJS, MongoDB, Bootstrap, nodeJS and MySQL.
-            </p>
+      </div>
+      <div class="column">
+        <!-- Profile picture -->
+        <div class="columns is-centered">
+          <div class="column is-4"> </br> </br>
+            <figure class="image is-128x128">
+              <img class= "is-rounded" src="assets/images/megan.png" alt="Profile image">
+            </figure>
           </div>
         </div>
-        <!-- For adding more information later -->
-        <!-- <div class="row">
-          <div class="col-md-12">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptas aspernatur nobis neque, eius modi necessitatibus soluta minus ut hic aliquam, eveniet at, aliquid explicabo beatae? Quos eveniet iure recusandae quia eligendi quasi blanditiis velit, exercitationem suscipit porro consectetur explicabo!</p>
+      </div>
+      <div class="column">
+        <!-- Skills -->
+        <div class="card skillsCard">
+          <div class="card-content skills-content">
+            <h3 class="title is-4">Skills</h3>
+            <div class="content">
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      jQuery  <strong>|</strong>   ReactJS   <strong>|</strong>   MongoDB   <strong>|</strong>  JavaScript
+                      <br>
+                      <!-- <progress class="progress is-primary" value="90" max="100"></progress> -->
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content is-centered">
+                    <p>
+                      Bootstrap <strong>|</strong>   node.JS   <strong>|</strong>   MySQL   <strong>|</strong>  HTML/CSS
+                      <br>
+                      <!-- <progress class="progress is-primary" value="90" max="100"></progress> -->
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
-        </div> -->
-      <section class="main-container">
+        </div>
+      </div>
     </div>
+  </section>
 
-    
-        <div class="footer">
-          copyright ©
+  <!-- Skills tags -->
+  <!-- <br>
+        <div class="tags custom-tags">
+          <span class="tag is-light">Node.js</span><span class="tag is-light">Express.js</span><span class="tag is-light">VueJS</span><span
+            class="tag is-light">JavaScript</span><span class="tag is-light">HTML5</span><span class="tag is-light">Canvas</span><span
+            class="tag is-light">CSS3</span><span class="tag is-light">Bulma</span><span class="tag is-light">Bootstrap</span><span
+            class="tag is-light">jQuery</span><span class="tag is-light">Pug</span><span class="tag is-light">Stylus</span><span
+            class="tag is-light">SASS/SCSS</span><span class="tag is-light">Webpack</span><span class="tag is-light">Git</span><span
+            class="tag is-light">ASP.NET Web Forms</span><span class="tag is-light">MSSQL</span><span class="tag is-light">MongoDB</span><span
+            class="tag is-light">Apache Cordova</span><span class="tag is-light">Chrome Extensions</span>
+        </div> -->
+
+  <!-- Services -->
+  <!-- <section class="section" id="services">
+    <div class="section-heading">
+      <h3 class="title is-2">Services</h3>
+      <h4 class="subtitle is-5">What can I do for you?</h4>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Front End Web Development</h4>
+              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+              Vue.js.
+            </div>
+          </div>
         </div>
- 
-    
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Back End Web Development</h4>
+              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Front End Web Development</h4>
+              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+              Vue.js.
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Back End Web Development</h4>
+              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Resume -->
+  <section class="section" id="resume">
+    <div class="section-heading">
+      <h3 class="title is-2">Resume</h3>
+      <h4 class="subtitle is-5">Learn more about me</h4>
+      <a href="assets/VoglerTechResume.docx" class="button is-link is-medium is-success">
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>Download My Resume</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">Portfolio</h3>
+        <h4 class="subtitle is-5">My latest works</h4>
+      </div>
+      <br>
+
+      <div class="container portfolio-container">
+        <div class="columns">
+          <div class="column is-4">
+            <!-- admin -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                    <span>TravelHub</span>
+                    <p class="is-size-6">
+                      This app can help users plan their next trip, using two API's, 
+                      a JSON request and a JS library
+                    </p>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image is-3by2">
+                  <img src="https://i.pinimg.com/originals/90/20/ab/9020abad954000d59bd01430b196a446.jpg" alt="Admin template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://mmvogler.github.io/TravelHub/" class="card-footer-item">Preview</a>
+                <a href="https://github.com/MMvogler/TravelHub" class="card-footer-item">Source Code</a>
+              </footer>
+            </div>
+          </br> </br>
+            <!-- cards -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Crystal Game</span>
+                  <p class="is-size-6">
+                    This interactive numbers game utilizes Bootstrap, Javascript and jQuery
+                  </p>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image is-3by2">
+                  <img src="https://www.pngtube.com/myfile/detail/44-448214_lotus-tattoos-png-transparent-images-sailor-moon-silver.png" alt="Cards template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://mmvogler.github.io/Crystal-Game/" class="card-footer-item">Preview</a>
+                <a href="https://github.com/MMvogler/Crystal-Game" class="card-footer-item">Source Code</a>
+              </footer>
+            </div>
+          </div>
+
+          <div class="column is-4">
+            <!-- band -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Train Schedule</span>
+                  <p class="is-size-6">
+                    Utilizing Firebase, this site provides current train scheduling information 
+                  </p>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image is-3by2">
+                  <img src="https://www.pngtube.com/myfile/detail/442-4424030_train-drawing.png" alt="Band template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://mmvogler.github.io/Train-Schedule/" class="card-footer-item">Preview</a>
+                <a href="https://github.com/MMvogler/Train-Schedule" class="card-footer-item">Source Code</a>
+              </footer>
+            </div>
+          </br> </br>
+            <!-- cheatsheet -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>LOTR Page</span>
+                  <p class="is-size-6">
+                    A fan page that utilizes jQuery, the Spotify API, Bootstrap and MySQL database
+                  </p>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image is-3by2">
+                  <img src="https://printablefreecoloring.com/image/movies/drawing-lord-of-the-rings-86.jpg" alt="Cheatsheet template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://project2-110519.herokuapp.com/" class="card-footer-item">Preview</a>
+                <a href="https://github.com/MMvogler/LOTR-Fan-Page" class="card-footer-item">Source Code</a>
+              </footer>
+            </div>
+          </div>
+
+          <div class="column is-4">
+            <!-- blog -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Bamazon</span>
+                  <p class="is-size-6">
+                    This app acknowledges the user's purchase choice and updates the store's inventory, utilizing MySQL
+                  </p>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image is-3by2">
+                  <img src="https://www.pnglot.com/pngfile/detail/209-2098700_grocery-cart-drawing-at-getdrawings-com-free-shopping.png" alt="Blog template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://mmvogler.github.io/Bamazon/" class="card-footer-item">Preview</a>
+                <a href="https://github.com/MMvogler/Bamazon" class="card-footer-item">Source Code</a>
+              </footer>
+            </div>
+            </br> </br>
+            <!-- cover -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Liri App</span>
+                  <p class="is-size-6">
+                    This app acknowledges the user's purchase choice and updates the store's inventory, utilizing Node and MySQL
+                  </p>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image is-3by2">
+                  <img src="https://images.all-free-download.com/images/graphiclarge/computer_keyboard_clip_art_9978.jpg" alt="Cover template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="https://mmvogler.github.io/liri-node-app/" class="card-footer-item">Preview</a>
+                <a href="https://github.com/MMvogler/liri-node-app" class="card-footer-item">Source Code</a>
+              </footer>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievement Level -->
+  <!-- <section class="section">
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Tweets</p>
+          <p class="title">3,456</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Following</p>
+          <p class="title">123</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Followers</p>
+          <p class="title">456K</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Likes</p>
+          <p class="title">789</p>
+        </div>
+      </div>
+    </nav>
+  </section> -->
+
+
+  <!-- Contact
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">Contact</h3>
+        <h4 class="subtitle is-5">Get in touch</h4>
+      </div>
+      <br>
+
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <div class="box">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Text input">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left">
+                <input class="input" type="email" placeholder="Email input" value="">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Textarea"></textarea>
+              </div>
+            </div>
+
+            <div class="field is-grouped has-text-centered">
+              <div class="control">
+                <button class="button is-link is-large"><span class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span>Submit</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-heading">
+      <p>
+        <strong>Bulma Personal Template</strong> by <a href="https://mubaidr.js.org">Muhammad Ubaid Raza</a>. The
+        source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+      </p>
+    </div>
+  </footer>
 </body>
+
 </html>
